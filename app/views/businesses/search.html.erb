@@ -1,0 +1,19 @@
+<form xmlns="http://www.w3.org/1999/html">
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabledTextInput">Ilość rekordów w bazie:</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder=<%= @ilosc %>>
+    </div>
+  </fieldset>
+  <fieldset enabled>
+    <div class="form">
+      <label>
+        <input type="checkbox" id="checkbox1"> Keyword:
+      </label>
+      <input type="text" id="keyword1" class="form-control" placeholder="firma"></input>
+    </div>
+    <button type="submit" class="btn btn-primary" formmethod="post">Szukaj i zapisz</button>
+  </fieldset>
+</form>
+
+<%= @result %>
